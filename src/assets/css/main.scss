@@ -1,0 +1,59 @@
+// 全局样式
+@import url('https://fonts.googleapis.com/css2?family=PingFang+SC:wght@300;400;500;600;700&display=swap');
+
+// 颜色变量
+:root {
+  --primary-color: #409eff;
+  --success-color: #67c23a;
+  --warning-color: #e6a23c;
+  --danger-color: #f56c6c;
+  --info-color: #909399;
+  
+  --text-primary: #303133;
+  --text-regular: #606266;
+  --text-secondary: #909399;
+  --text-placeholder: #c0c4cc;
+  
+  --border-light: #ebeef5;
+  --border-lighter: #f2f6fc;
+  
+  --bg-color: #ffffff;
+  --bg-light: #f5f7fa;
+}
+
+// 通用样式
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: var(--bg-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  
+  &:hover {
+    background: #66b1ff;
+    border-color: #66b1ff;
+  }
+}
+
+// 响应式设计
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .card {
+    padding: 15px;
+  }
+}
